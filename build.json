@@ -1,0 +1,18 @@
+{
+    "values": {
+    	"sourcePath": "source"
+    },
+    "configurations": {
+        "debug": {
+            "linkerOptions": "-lpthread -lcurl"
+        },
+        "release": {
+            "linkerOptions": "-lpthread -lcurl"
+        }
+    },
+    "tools": {
+        "cloc": "echo 'SOURCES'; find $sourcePath -name '*.[hc]*' | grep -v '+test' | sort | xargs wc -l; echo 'TEST'; find $sourcePath -name '*.[hc]*' | grep '+test' | sort | xargs wc -l",
+        "status": "git status",
+        "revert": "git reset --hard HEAD"
+    }
+}

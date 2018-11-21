@@ -1,0 +1,6 @@
+{
+    "values": {
+        "type": "sharedLibrary",
+        "dependencies": ["common"]
+    }
+}
